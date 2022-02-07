@@ -1,0 +1,42 @@
+<!-- <?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Klient.HospitalScreenController">
+   <content>
+      <AnchorPane prefHeight="600.0" prefWidth="750.0">
+         <children>
+            <Label layoutX="226.0" layoutY="26.0" text="Wybierz placówkę">
+               <font>
+                  <Font name="Impact" size="40.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="hospitalsList" layoutX="225.0" layoutY="90.0" prefHeight="35.0" prefWidth="300.0" promptText="Lista placówek" />
+            <Button layoutX="342.0" layoutY="144.0" mnemonicParsing="false" onMouseClicked="#searchSpecialist" text="Wyszukaj" />
+            <ScrollPane layoutX="14.0" layoutY="235.0" />
+            <DatePicker fx:id="dob" editable="false" layoutX="287.0" layoutY="501.0" />
+            <Button layoutX="338.0" layoutY="553.0" mnemonicParsing="false" onMouseClicked="#reserve" text="Zarezerwuj" />
+            <TableView fx:id="specialistTable" layoutX="15.0" layoutY="195.0" prefHeight="288.0" prefWidth="720.0">
+              <columns>
+                <TableColumn fx:id="tytul" prefWidth="113.60000324249268" text="Tytuł" />
+                <TableColumn fx:id="cena" prefWidth="118.4000244140625" text="Cena" />
+                  <TableColumn fx:id="statusZam" prefWidth="128.00001525878906" text="Status wypożyczenia" />
+                  <TableColumn fx:id="dataZam" prefWidth="72.79998779296875" text="Termin zwrotu" />
+                  <TableColumn fx:id="statusPl" prefWidth="103.20001220703125" text="Status płatności" />
+              </columns>
+                <columnResizePolicy>
+                    <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                </columnResizePolicy>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane> -->

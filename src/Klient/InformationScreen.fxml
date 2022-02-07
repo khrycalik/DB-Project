@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Klient.InformationScreenController">
+   <content>
+      <AnchorPane prefHeight="600.0" prefWidth="750.0">
+         <children>
+            <Label layoutX="290.0" layoutY="32.0" text="Moje dane">
+               <font>
+                  <Font name="Impact" size="40.0" />
+               </font>
+            </Label>
+            <Label layoutX="127.0" layoutY="82.0" text="Imie">
+               <font>
+                  <Font name="Impact" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="104.0" layoutY="118.0" text="Nazwisko">
+               <font>
+                  <Font name="Impact" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="name" layoutX="282.0" layoutY="85.0" prefHeight="24.0" prefWidth="250.0" text="Default">
+               <font>
+                  <Font name="Impact" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="surname" layoutX="282.0" layoutY="121.0" prefHeight="24.0" prefWidth="250.0" text="Default">
+               <font>
+                  <Font name="Impact" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="123.0" layoutY="155.0" text="Email">
+               <font>
+                  <Font name="Impact" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="email" layoutX="282.0" layoutY="158.0" prefHeight="24.0" prefWidth="250.0" text="Default">
+               <font>
+                  <Font name="Impact" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="73.0" layoutY="195.0" text="Numer telefonu">
+               <font>
+                  <Font name="Impact" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="telefon" layoutX="282.0" layoutY="198.0" prefHeight="24.0" prefWidth="250.0" text="Default">
+               <font>
+                  <Font name="Impact" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>

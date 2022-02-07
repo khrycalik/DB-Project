@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<ScrollPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Administrator.AddScreenController">
+   <content>
+      <AnchorPane prefHeight="600.0" prefWidth="750.0">
+         <children>
+            <Label layoutX="245.0" layoutY="35.0" text="Istniejące dane">
+               <font>
+                  <Font name="Impact" size="40.0" />
+               </font>
+            </Label>
+            <TableView fx:id="a" layoutX="10.0" layoutY="100.0" prefHeight="320.0" prefWidth="110.0">
+               <columns>
+                  <TableColumn fx:id="autor" prefWidth="108.0" text="Autorzy" />
+               </columns>
+            </TableView>
+
+            <TableView fx:id="w" layoutX="130.0" layoutY="100.0" prefHeight="320.0" prefWidth="110.0">
+               <columns>
+                  <TableColumn fx:id="wydawnictwo" prefWidth="108.0" text="Wydawnictwa" />
+               </columns>
+            </TableView>
+            <TableView fx:id="k" layoutX="250.0" layoutY="100.0" prefHeight="320.0" prefWidth="110.0">
+               <columns>
+                  <TableColumn fx:id="kategoria" prefWidth="108" text="Kategorie" />
+               </columns>
+            </TableView>
+            <TableView fx:id="m" layoutX="370.0" layoutY="100.0" prefHeight="320.0" prefWidth="110.0">
+               <columns>
+                  <TableColumn fx:id="magazyn" prefWidth="108.0" text="Magazyny" />
+               </columns>
+            </TableView>
+            <TableView fx:id="j" layoutX="490.0" layoutY="100.0" prefHeight="320.0" prefWidth="110.0">
+               <columns>
+                  <TableColumn fx:id="jezyk" prefWidth="108" text="Języki" />
+               </columns>
+            </TableView>
+            <TableView fx:id="u" layoutX="610.0" layoutY="100.0" prefHeight="320.0" prefWidth="125.0">
+               <columns>
+                  <TableColumn fx:id="uniwersum" prefWidth="123" text="Uniwersa" />
+               </columns>
+            </TableView>
+            <Label layoutX="320.0" layoutY="430.0" text="Wybierz tabele">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="dodaj" layoutX="238.0" layoutY="470.0" prefHeight="35.0" prefWidth="150.0"/>
+            <ComboBox fx:id="wybor" layoutX="398.0" layoutY="470.0" prefHeight="35.0" prefWidth="150.0" value="Autor" />
+            <Button layoutX="263.0" layoutY="525.0" mnemonicParsing="false" onMouseClicked="#addToBase" prefHeight="30.0" prefWidth="250.0" text="Dodaj do tabeli" />
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>

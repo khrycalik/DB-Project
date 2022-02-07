@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Administrator.RaportScreenController">
+   <content>
+      <AnchorPane prefHeight="600.0" prefWidth="750.0">
+         <children>
+
+            <Label fx:id="wartosc" layoutX="80.0" layoutY="75.0" text="Wartość magaynu:"/>
+            <Label fx:id="iloscd" layoutX="80.0" layoutY="110.0" text="Ilość książek drogich:"/>
+            <Label fx:id="iloscs" layoutX="80.0" layoutY="145.0" text="Ilość książek średnio drogich:"/>
+            <Label fx:id="ilosct" layoutX="80.0" layoutY="180.0" text="Ilość książek tanich:"/>
+            <Label fx:id="dlugie" layoutX="80.0" layoutY="215.0" text="Ilość książek długich:"/>
+            <Label fx:id="srednie" layoutX="80.0" layoutY="250.0" text="Ilość książek średnio długich:"/>
+            <Label fx:id="krotkie" layoutX="80.0" layoutY="285.0" text="Ilość książek ktrótkich:"/>
+
+            <Button fx:id="pw" layoutX="150" layoutY="350.0" onMouseClicked="#raportW" mnemonicParsing="false"  prefHeight="30.0" prefWidth="175.0" text="Zapisz raport wypożyczeń" /> 
+            <Button fx:id="pz" layoutX="425" layoutY="350.0" onMouseClicked="#raportZ" mnemonicParsing="false"  prefHeight="30.0" prefWidth="175.0" text="Zapisz raport zamówień" /> 
+
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>

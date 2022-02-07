@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Klient.BacketScreenController">
+   <content>
+      <AnchorPane prefHeight="600.0" prefWidth="750.0">
+         <children>
+            <Label layoutX="100.0" layoutY="26.0" text="Zmień ilość zamawianych książek">
+               <font>
+                  <Font name="Impact" size="40.0" />
+               </font>
+            </Label>
+            <TextField fx:id="book" layoutX="225.0" layoutY="90.0" prefHeight="35.0" prefWidth="125.0" promptText="Identyfikator"/>
+            <TextField fx:id="ile" layoutX="375.0" layoutY="90.0" prefHeight="35.0" prefWidth="125.0" promptText="Sztuk"/>
+            <Button layoutX="328.0" layoutY="144.0" mnemonicParsing="false" onMouseClicked="#backetList" text="Aktualizuj" />
+            <TableView fx:id="backetTable" layoutX="45.0" layoutY="195.0" prefHeight="288.0" prefWidth="652.0">
+              <columns>
+                <TableColumn fx:id="identyfikator" prefWidth="50" text="Id" />
+                <TableColumn fx:id="tytul" prefWidth="120" text="Tytuł" />
+                <TableColumn fx:id="autor" prefWidth="120" text="Autor" />
+                <TableColumn fx:id="wydawnictwo" prefWidth="120" text="Wydawnictwo" />
+                  <TableColumn fx:id="sztuk" prefWidth="50" text="Sztuk" />
+                  <TableColumn fx:id="cena" prefWidth="60" text="Cena" />
+                  <TableColumn fx:id="cenaWyp" prefWidth="130" text="Cena Wypożyczenia" />
+                
+              </columns>
+            </TableView>
+            <Label fx:id="suma" layoutX="550.0" layoutY="500.0" text="test"/>
+            <Button layoutX="640.0" layoutY="550.0" mnemonicParsing="false" onMouseClicked="#kup" text="Zakup" />
+            <Button layoutX="550.0" layoutY="550.0" mnemonicParsing="false" onMouseClicked="#wypozycz" text="Wypożycz" />
+            <TextField fx:id="gdzie" layoutX="55.0" layoutY="500.0" prefHeight="35.0" prefWidth="300.0" promptText="Podaj adres dostawy dla opcji zakup"/>
+
+
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>
